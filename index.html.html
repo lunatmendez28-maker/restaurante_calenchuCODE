@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>RestauranteCalenchu!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+
+    <style>
+      h1 {
+      font-family: "Oldenburg", serif;
+      font-size: 4rem;
+      color: #FF1F4C;
+      }
+
+      h2, h3 {
+      color: #D14D51;
+      }
+
+      p {
+      color: #D5B110;
+      }
+
+      body {
+      text-align: center;
+      background-color: #0A0007;
+      }
+
+      label, button {
+      color: #B23834;
+      background-color: #0A0007
+      } 
+
+      input {
+      color: #A1DD08;
+      background-color: #0A0007;
+      } 
+
+      textarea {
+      color: #A1DD08;
+      background-color: #0A0007;
+      } 
+
+      input[type="radio"] {
+      accent-color: #FFD700;
+      }
+
+      .pizza-item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      }
+
+      .pastas-item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      }
+
+      .burger-item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      }
+
+      #order-form {
+      background-image: url("https://i.pinimg.com/1200x/3d/7c/e1/3d7ce16b0df22efe2305188a0fe1cb12.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 60px 20px;
+      color: #E60017;
+      }
+
+      #menu {
+      background-image: url("https://i.pinimg.com/736x/38/98/30/3898306d3ea700f590c14ae071e7bd5b.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+    <h1>Calenchu!</h1>
+    <figure>
+      <img 
+        id="header-img"
+        width="500"
+        src="https://i.imgur.com/8km4urA.jpeg"
+        alt="Foto del restaurante Calenchu!"
+      />
+      <figcaption>Foto de frente del Restaurante Calenchu!</figcaption>
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#order-form">Ordenar</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+     <section id="menu">
+       <h2>Menú</h2>
+       <article>
+        <h3>Pizzas</h3>
+        <figure>
+            <img
+              width="250"
+              src="https://i.pinimg.com/736x/98/20/22/9820222121524403cfb211b91763eb6f.jpg"
+              alt="Foto de pizza Calenchu!"
+            />
+            <figcaption>Variedad de pizzas</figcaption>
+        </figure>
+ 
+        <figure class="pizza-item">
+          <img
+            width="150"
+            src="https://i.pinimg.com/736x/ab/32/52/ab325224319f7aef6bee8f5f4aeead57.jpg"
+            alt="Pizza napolitana"
+          />
+          <p>
+           <i>
+            Pizza Napolitana: Salsa de tomate,<br> mozzarella, aceite de oliva<br> y albahaca fresca:<br> 
+            <strong>$12.000</strong>
+           </i>
+          </p>
+        </figure>
+
+        <figure class="pizza-item">
+          <img 
+            width="150"
+            src="https://i.pinimg.com/1200x/5c/3b/3a/5c3b3a65fd6f41caffe07315e93c190d.jpg"
+            alt="Pizza Crudo y Rúcula"
+          />
+          <p>
+           <i>
+            Pizza de Jamón Crudo y Rúcula:<br> Queso mozzarella, jamón crudo<br> serrano, rúcula fresca, aceite de oliva<br>  parmesano rallado: <br>
+            <strong>$22.000</strong>
+           </i>
+          </p>
+        </figure>
+
+        <figure class="pizza-item">
+          <img
+            width="150"
+            src="https://i.pinimg.com/736x/99/69/f5/9969f5ab42d7aa3fa77875f51dde3c24.jpg"
+            alt="Pizza Cebolla Caramelizada y Queso Azul"
+          />
+          <p>
+           <i>
+            Pizza de Cebolla Caramelizada y Queso Azul:<br> Queso mozzarella y queso azul,<br> cebolla preparada lentamente con aceite,<br> azúcar y aceto balsámico, aceite de<br> oliva y nueces tostadas: <br>
+            <strong>$19.000</strong>
+           </i>
+          </p>
+        </figure>
+       </article>
+
+       <article>
+         <h3>Burger</h3>
+         <figure>
+            <img
+              width="250"
+              src="https://i.pinimg.com/1200x/fd/b7/62/fdb762bf41b0474525e8ec259d4778e9.jpg"
+              alt="Burger"
+            />
+            <figcaption>Variedad de Burger</figcaption>
+          </figure>  
+ 
+          <figure class="burger-item">
+            <img
+              width="150"
+              src="https://i.pinimg.com/736x/db/0c/97/db0c9750fe0a2f080f85aafe9c036b3e.jpg"
+              alt="Cheeseburger doble"
+            />
+            <p>
+             <i>
+              Cheeseburger Doble: <br>Dos medallones de ternera <br>con queso cheddar: <br>
+              <strong>$10.000</strong>
+             </i>
+            </p>
+          </figure>
+
+          <figure class="burger-item">
+            <img
+              width="150"
+              src="https://i.pinimg.com/736x/7d/c7/ad/7dc7ad85fb9531ace19fd72df61ad32c.jpg"
+              alt="Burger Clásica"
+            />
+            <p>
+             <i>
+              Burger Clásica: Medallón <br>de ternera, queso tybo, lechuga, tomate y jamón: <br> 
+              <strong>$11.500</strong>
+             </i>
+            </p>
+          </figure>
+
+          <figure class="burger-item">
+            <img
+              width="150"
+              src="https://i.pinimg.com/1200x/b7/50/05/b750058648ad99a4dac84a4186210d71.jpg"
+              alt="Burger Caribeña"
+            />
+            <p>
+             <i>
+              Burger Caribeña: Medallón doble<br> de ternera, queso cheddar,<br>panceta ahumada y cebolla caramelizada <br>
+              <strong>$17.000</strong>
+             </i>
+            </p>
+          </figure>
+        </article>
+
+        <article>
+         <h3>Pastas</h3>
+         <figure>
+            <img
+              width="250"
+              src="https://i.pinimg.com/1200x/0a/a1/46/0aa146519b412fac21e60efc635efb75.jpg"
+              alt="Pastas"
+            />
+            <figcaption>Variedad de Pastas</figcaption>
+          </figure>
+ 
+          <figure class="pastas-item"> 
+            <img
+              width="150"
+              src="https://i.pinimg.com/736x/63/37/11/6337112cc0217288459802178a41b6b2.jpg"
+              alt="Fideos Tallarines"
+            />
+            <p>
+             <i>
+              Fideos Tallarines:<br> Salsa 4 quesos/salsa bolognesa/<br>salsa blanca/ salsa mixta con queso parmesano:<br> 
+              <strong>$16.000</strong>
+             </i>
+            </p>
+          </figure>
+
+          <figure class="pastas-item">
+            <img
+              width="150"
+              src="https://i.pinimg.com/736x/16/0c/2b/160c2be2d78f4d58acadc4e57dce32a4.jpg"
+              alt="Ñoquis"
+            />
+            <p>
+             <i>
+              Ñoquis de Papa:<br> Salsa 4 quesos/salsa bolognesa/<br>salsa mixta/salsa blanca: <br>
+              <strong>$18.000</strong>
+             </i>
+            </p>
+          </figure>
+
+          <figure class="pastas-item">
+            <img
+              width="150"
+              src="https://i.pinimg.com/736x/cd/a9/7d/cda97dccd28a10edd2a9a325ede95ffa.jpg"
+              alt="Ravioles"
+            />
+            <p>
+             <i>
+              Ravioles rellenos de Ricota,<br> Nuez, Jamón y Queso: Salsa 4 quesos/<br>salsa bolognesa/salsa mixta/salsa blanca: <br>
+              <strong>$23.000</strong>
+             </i>
+            </p>
+          </figure>
+        </article>
+     </section>
+
+     <section id="order-form">
+        <h2>Realice su pedido</h2>
+        <form>
+          <h3>Pizzas:</h3>
+          <label for="napolitana">Napolitana:</label>
+          <input type="number" id="napolitana" name="napolitana" min="0" max="10"> 
+          <br>
+
+          <label for="crudo-y-rucula">Crudo y rúcula</label>
+          <input type="number" id="crudo-y-rucula" name="crudo-y-rucula" min="0" max="10">
+          <br>
+
+          <label for="cebolla-caramelizada">Cebolla caramelizada y queso azul:</label>
+          <input type="number" id="cebolla-caramelizada" name="cebolla-caramelizada" min="0" max="10">
+          <br><br>
+
+          <h3>Burger:</h3>
+          <label for="cheeseburger-doble">Cheeseburger doble:</label>
+          <input type="number" id="cheeseburger-doble" name="cheeseburger-doble" min="0" max="10">
+          <br>
+
+          <label for="clasica">Burger clásica:</label>
+          <input type="number" id="clasica" name="clasica" min="0" max="10">
+          <br>
+
+          <label for="caribeña">Burger caribeña:</label>
+          <input type="number" id="caribeña" name="caribeña" min="0" max="10">
+          <br><br>
+
+          <h3>Pastas:</h3>
+          <label for="tallarines">Tallarines</label>
+          <input type="number" id="tallarines" name="tallarines" min="0" max=10>
+          <br>
+
+          <label for="ñoquis">Ñoquis:</label>
+          <input type="number" id="ñoquis" name="ñoquis" min="0" max="10">
+          <br>
+
+          <label for="ravioles">Ravioles:</label>
+          <input type="number" id="ravioles" name="ravioles" min="0" max="10">
+          <br><br>
+
+          <h3>Adicionales</h3>
+          <label for="medallon">Medallón extra con queso:</label>
+          <input type="number" id="medallon" name="medallon" min="0" max="10">
+          <br>
+
+          <label for="cheddar">Cheddar</label>
+          <input type="number" id="cheddar" name="cheddar" min="0" max="10">
+          <br>
+
+          <label for="huevo">Huevo a la plancha/Tomate/Lechuga</label>
+          <input type="number" id="huevo" name="huevo" min="0" max="10">
+          <br>
+
+          <label for="salsa">Salsa extra</label>
+          <input type="number" id="salsa" name="salsa" min="0" max="10">
+          <br>
+
+          <label for="caramelizada">Cebolla caramelizada</label>
+          <input type="number" id="caramelizada" name="caramelizada" min="0" max="10">
+          <br><br>
+
+          <p>Detallar adiocional:</p>
+          <br>
+          <textarea id="adicionales" rows="7" cols="42" placeholder="Ej= 1 cheddar para burger caribeña"></textarea>
+          <br><br>
+
+          <p>Eres alérgico/a a algún alimento?</p>
+          <label>
+          <input type="radio" name="option" value="si">Si
+          <br>
+          <input type="radio" name="option" value="no">No
+          </label>
+
+          <p>Por favor, en caso de que así sea detallanos a continuacion:</p>
+          <textarea id="alergia" rows="3" cols="20" placeholder="Alergía a:"></textarea>
+          <br><br>
+
+          <button type="submit">Enviar pedido</button>
+
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p> 
+       <i>
+        © 2026 · Restaurante Calenchu! ·
+        Hecho con amor por @Lunatmendez 💕✨
+       </i>
+      </p>
+    </footer>
+  </body>
+</html>
